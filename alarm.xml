@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#0D172A"
+    tools:context=".Alarm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⏰ 알람 설정"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <ToggleButton
+            android:id="@+id/checkbox_mon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/day_toggle_background"
+            android:textColor="@drawable/day_text_color"
+            android:textOn="월"
+            android:textOff="월"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ToggleButton
+            android:id="@+id/checkbox_tue"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/day_toggle_background"
+            android:textColor="@drawable/day_text_color"
+            android:textOn="화"
+            android:textOff="화"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ToggleButton
+            android:id="@+id/checkbox_wed"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/day_toggle_background"
+            android:textColor="@drawable/day_text_color"
+            android:textOn="수"
+            android:textOff="수"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ToggleButton
+            android:id="@+id/checkbox_thu"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/day_toggle_background"
+            android:textColor="@drawable/day_text_color"
+            android:textOn="목"
+            android:textOff="목"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ToggleButton
+            android:id="@+id/checkbox_fri"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/day_toggle_background"
+            android:textColor="@drawable/day_text_color"
+            android:textOn="금"
+            android:textOff="금"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ToggleButton
+            android:id="@+id/checkbox_sat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/day_toggle_background"
+            android:textColor="@drawable/day_text_color"
+            android:textOn="토"
+            android:textOff="토"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ToggleButton
+            android:id="@+id/checkbox_sun"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/day_toggle_background"
+            android:textColor="@drawable/day_text_color"
+            android:textOn="일"
+            android:textOff="일"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:timePickerMode="spinner"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:theme="@style/SpinnerWhiteText" />
+
+    </FrameLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏰ 알람 설정"
+        android:textSize="18sp"
+        android:textColor="#7FFFD4"
+        android:textStyle="bold"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="#7FFFD4"
+        app:strokeWidth="2dp"
+        app:cornerRadius="8dp"
+        android:layout_marginTop="24dp"
+        android:padding="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancelAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔕 알람 취소"
+        android:textSize="18sp"
+        android:textColor="#A0B1C4"
+        android:textStyle="bold"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/pro_sleep_green"
+        app:strokeWidth="2dp"
+        app:cornerRadius="8dp"
+        android:enabled="false"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp"/>
+
+
+</LinearLayout>

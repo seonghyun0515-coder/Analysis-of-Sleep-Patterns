@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pro_sleep_accent">#7FFFD4</color>
+    <color name="pro_sleep_secondary_text">#A0B1C4</color>
+
+    <color name="pro_sleep_green">#66BB6A</color>
+    <color name="pro_sleep_yellow">#FFCA28</color>
+    <color name="pro_sleep_purple">#AB47BC</color>
+    <color name="pro_sleep_orange">#FFA726</color>
+    <color name="item_background_dark">#1E2C4A</color>
+    <color name="gold_badge">#FFD700</color>
+    <color name="purple_badge">#9C27B0</color>
+    <color name="blue_badge">#2196F3</color>
+    <color name="red_badge">#F44336</color>
+</resources>
