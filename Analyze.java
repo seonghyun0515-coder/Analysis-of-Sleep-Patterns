@@ -37,7 +37,7 @@ import okhttp3.Response;
 public class Analyze extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
-    private static final String API_KEY = "AIzaSyDuYhjHNhAY2GV3yD6Un5nXEBz7AP_uCXM";
+    private static final String API_KEY = "";
     private static final String url =
             "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY;
 
